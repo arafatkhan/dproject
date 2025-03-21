@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tailwind.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <nav class="bg-gray-800 p-4">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="{{ url_for('hello_world') }}" class="hover:text-gray-400">Home</a></li>
+            <li><a href="{{ url_for('buddha_quote') }}" class="hover:text-gray-400">Buddha</a></li>
+            <li><a href="{{ url_for('gandhi_quote') }}" class="hover:text-gray-400">Gandhi</a></li>
+            <li><a href="{{ url_for('mohammad_quote') }}" class="hover:text-gray-400">Mohammad</a></li>
+            <li><a href="{{ url_for('jesus_quote') }}" class="hover:text-gray-400">Jesus</a></li>
+        </ul>
+    </nav>
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best among you is the one who doesn’t harm others with his tongue and hands."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The strongest among you is the one who controls his anger."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Seek knowledge from the cradle to the grave."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best of you are those who are best to their families."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"A good man treats women with honor."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best of houses is the house where an orphan gets love and kindness."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best of people are those that bring most benefit to the rest of mankind."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best of you are those who learn the Quran and teach it."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best of you are those who have the best manners and character."</p>
+                <p class="text-sm text-gray-500 mt-2">- Mohammad</p>
+            </div>
+        </div>
+        <div class="mt-8 p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+            <h2 class="text-2xl font-bold mb-2">Project Information</h2>
+            <p class="text-lg">This project is built using:</p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Language: Python</li>
+                <li>Framework: Flask</li>
+                <li>Frontend: HTML, Tailwind CSS</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

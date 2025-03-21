@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/png">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <nav class="bg-gray-800 p-4">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="{{ url_for('hello_world') }}" class="hover:text-gray-400">Home</a></li>
+            <li><a href="{{ url_for('buddha_quote') }}" class="hover:text-gray-400">Buddha</a></li>
+            <li><a href="{{ url_for('gandhi_quote') }}" class="hover:text-gray-400">Gandhi</a></li>
+            <li><a href="{{ url_for('mohammad_quote') }}" class="hover:text-gray-400">Mohammad</a></li>
+            <li><a href="{{ url_for('jesus_quote') }}" class="hover:text-gray-400">Jesus</a></li>
+        </ul>
+    </nav>
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The only limit to our realization of tomorrow is our doubts of today."</p>
+                <p class="text-sm text-gray-500 mt-2">- Franklin D. Roosevelt</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The future belongs to those who believe in the beauty of their dreams."</p>
+                <p class="text-sm text-gray-500 mt-2">- Eleanor Roosevelt</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Do not wait to strike till the iron is hot; but make it hot by striking."</p>
+                <p class="text-sm text-gray-500 mt-2">- William Butler Yeats</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The best way to predict the future is to create it."</p>
+                <p class="text-sm text-gray-500 mt-2">- Peter Drucker</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"You miss 100% of the shots you don't take."</p>
+                <p class="text-sm text-gray-500 mt-2">- Wayne Gretzky</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Whether you think you can or you think you can't, you're right."</p>
+                <p class="text-sm text-gray-500 mt-2">- Henry Ford</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The only way to do great work is to love what you do."</p>
+                <p class="text-sm text-gray-500 mt-2">- Steve Jobs</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Success is not the key to happiness. Happiness is the key to success."</p>
+                <p class="text-sm text-gray-500 mt-2">- Albert Schweitzer</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Believe you can and you're halfway there."</p>
+                <p class="text-sm text-gray-500 mt-2">- Theodore Roosevelt</p>
+            </div>
+        </div>
+        <div class="mt-8 p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+            <h2 class="text-2xl font-bold mb-2">Project Information</h2>
+            <p class="text-lg">This project is built using:</p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Language: Python</li>
+                <li>Framework: Flask</li>
+                <li>Frontend: HTML, Tailwind CSS</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="bg-gray-800 p-4 text-center text-gray-400">
+        © 2025 Quotes Collection. All rights reserved.
+    </footer>
+</body>
+</html>

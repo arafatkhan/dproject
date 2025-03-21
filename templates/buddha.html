@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tailwind.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/png">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <nav class="bg-gray-800 p-4">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="{{ url_for('hello_world') }}" class="hover:text-gray-400">Home</a></li>
+            <li><a href="{{ url_for('buddha_quote') }}" class="hover:text-gray-400">Buddha</a></li>
+            <li><a href="{{ url_for('gandhi_quote') }}" class="hover:text-gray-400">Gandhi</a></li>
+            <li><a href="{{ url_for('mohammad_quote') }}" class="hover:text-gray-400">Mohammad</a></li>
+            <li><a href="{{ url_for('jesus_quote') }}" class="hover:text-gray-400">Jesus</a></li>
+        </ul>
+    </nav>
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The mind is everything. What you think you become."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Three things cannot be long hidden: the sun, the moon, and the truth."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"The only real failure in life is not to be true to the best one knows."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"You, yourself, as much as anybody in the entire universe, deserve your love and affection."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Peace comes from within. Do not seek it without."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"No one saves us but ourselves. No one can and no one may. We ourselves must walk the path."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear."</p>
+                <p class="text-sm text-gray-500 mt-2">- Buddha</p>
+            </div>
+        </div>
+        <div class="mt-8 p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+            <h2 class="text-2xl font-bold mb-2">Project Information</h2>
+            <p class="text-lg">This project is built using:</p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Language: Python</li>
+                <li>Framework: Flask</li>
+                <li>Frontend: HTML, Tailwind CSS</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

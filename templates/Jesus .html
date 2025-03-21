@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esh Quotes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tailwind.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <nav class="bg-gray-800 p-4">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="{{ url_for('hello_world') }}" class="hover:text-gray-400">Home</a></li>
+            <li><a href="{{ url_for('buddha_quote') }}" class="hover:text-gray-400">Buddha</a></li>
+            <li><a href="{{ url_for('gandhi_quote') }}" class="hover:text-gray-400">Gandhi</a></li>
+            <li><a href="{{ url_for('mohammd_quote') }}" class="hover:text-gray-400">Mohammad</a></li>
+            <li><a href="{{ url_for('esh_quote') }}" class="hover:text-gray-400">Esh</a></li>
+        </ul>
+    </nav>
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 1 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 2 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 3 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 4 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 5 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 6 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 7 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 8 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+            <div class="p-4 bg-white text-gray-800 rounded shadow hover:shadow-lg transition-shadow">
+                <p class="text-lg">"Quote 9 from Esh."</p>
+                <p class="text-sm text-gray-500 mt-2">- Esh</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
